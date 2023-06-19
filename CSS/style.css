@@ -1,0 +1,138 @@
+
+
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+
+
+body,html {
+font-family: 'SF Pro Display', sans-serif;
+width: 100%;
+height: 100%;
+border: 0;
+padding: 0;
+
+}
+
+header {
+    display: inline-flex;
+    height: 7vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    position: fixed;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100% ;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 10px auto;
+    position: relative;
+}
+
+
+
+.image-container {
+    background-image: url("../Ressources/EffigieTroyes.png");
+    object-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+
+}
+
+/*img .backmain{
+    width: auto;
+    object-fit: fill;
+}*/
+
+
+.logo-container {
+    display: flex;
+    /*background-image: url("../Ressources/logo.png") , url("../Ressources/lens\ white.png");
+    background-repeat: no-repeat;
+    background-position: center;*/
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+
+
+}
+
+nav {
+    display: inline-flex;
+    align-self: center;
+    width: 80%;
+    height: 8%;
+    position:fixed;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid black 1.5px;
+
+}
+
+.cameralens {
+    animation: rotate normal linear infinite 5s;
+}
+
+
+.navli li {
+    padding: 1vw 5vw 1vw 5vw;
+    margin: 0;
+    display: inline;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    flex-shrink: 1 ;
+    flex-grow: 1;
+}
+
+footer {
+    display: inline-flex;
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ulfooter li {
+    display: inline;
+    list-style: none;
+    color: rgb(3, 58, 105);
+    padding: 1.5vh 2vw 1.5vh 2vw;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.reseaux {
+    width: 27px;
+    height: auto;
+    padding-bottom: -10px;
+    align-self: stretch;
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    nav {
+        width: 100%;
+    }
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg);}
+}
