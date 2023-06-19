@@ -1,130 +1,131 @@
-
-
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
 
-
-body,html {
+body {
 font-family: 'SF Pro Display', sans-serif;
-width: 100%;
-height: 100%;
-border: 0;
+box-sizing: border-box;
 padding: 0;
-
+margin: 0;
+/*border: solid black 3px;*/
 }
 
+/* === Header / Navbar top ===*/
 header {
-    display: inline-flex;
-    height: 7vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
-    position: fixed;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100% ;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto 10px auto;
-    position: relative;
-}
-
-
-
-.image-container {
-    background-image: url("../Ressources/EffigieTroyes.png");
-    object-position: bottom;
-    background-size: cover;
-    width: 100%;
-    height: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-
-}
-
-/*img .backmain{
-    width: auto;
-    object-fit: fill;
-}*/
-
-
-.logo-container {
-    display: flex;
-    /*background-image: url("../Ressources/logo.png") , url("../Ressources/lens\ white.png");
-    background-repeat: no-repeat;
-    background-position: center;*/
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 300px;
-    height: 300px;
-
+    background-color: white;
+    padding: 10px;
 
 }
 
 nav {
-    display: inline-flex;
-    align-self: center;
-    width: 80%;
-    height: 8%;
-    position:fixed;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.navli {
+    width: 70%;
+    margin: auto;
+    margin: 15px auto;
+
+}
+
+.navli li {
+    display: inline;
+    margin: 0 6em;
+    padding: 0 auto;
+    border-bottom: solid rgb(0, 0, 0) 2px;
+
+}
+
+
+
+/* === Main === */
+
+main {
+    display: block;
+    flex-direction: column;
+    height: 100vh;
+    width: 100% ;
+    margin: auto;
+    /*border: solid green 3px;*/
+    
+}
+
+.homeimg {
+    display: flex;
+    background-image: url("../Ressources/EffigieTroyes.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+
+    /*border: solid black 3px;*/
+}
+
+.backmain {
+    width: 100%;
+}
+
+/* === Main / logo animé === */
+
+.logo-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    border-bottom: solid black 1.5px;
+    top: 60%;
+    bottom: 0;
+    left: 0;
+    right: 80%;
+    
+
+
 
 }
 
 .cameralens {
-    animation: rotate normal linear infinite 5s;
+    animation: rotate normal linear infinite 30s;
 }
 
 
-.navli li {
-    padding: 1vw 5vw 1vw 5vw;
-    margin: 0;
-    display: inline;
-    list-style: none;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    flex-shrink: 1 ;
-    flex-grow: 1;
-}
+/* === Footer === */
 
 footer {
-    display: inline-flex;
-    width: 100%;
-    height: 5%;
-    justify-content: center;
-    position: relative;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    background-color: white;
+    text-align: center;
+    margin: 8px auto;
 }
 
-.ulfooter li {
-    display: inline;
+.ulfooter {
+    display: inline-flex;
     list-style: none;
-    color: rgb(3, 58, 105);
-    padding: 1.5vh 2vw 1.5vh 2vw;
+    width: 100%;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.lifooter{
     font-size: 0.9em;
     font-weight: 100;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding: auto 10px;
+
 }
 
 .reseaux {
-    width: 27px;
-    height: auto;
-    padding-bottom: -10px;
-    align-self: stretch;
+    width: 25px;
 
 }
 
-
+li:hover {
+    align-self: baseline;
+}
 
 @media only screen and (max-width: 480px) {
     nav {
